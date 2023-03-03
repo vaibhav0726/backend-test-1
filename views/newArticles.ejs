@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="post" action="/articles/new">
+      <label for="user">title</label>
+      <input type="text" id="title" name="title" placeholder="username" />
+      <label for="comment">description</label>
+      <input
+        type="text"
+        id="description"
+        name="description"
+        placeholder="comment"
+      />
+      <input type="hidden" />
+      <label for="markdown">markdown</label>
+      <input type="text" id="markdown" name="markdown" placeholder="markdown" />
+      <input type="submit" />
+      <!-- <button><a href="/cancel">cancel</a></button> -->
+    </form>
+  </body>
+</html>

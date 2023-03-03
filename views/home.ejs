@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center; text-decoration: underline">Articles</h1>
+    <h1><a href="/articles/new">Add new article</a></h1>
+    <% let count = 1; %> <% for(let i of articles){ %>
+    <ul style="text-align: center">
+      <li><div style="font-size: 30px">This is <%= count++;%> article</div></li>
+      <li>title:- <%= i.title %></li>
+      <li><%= i.description %></li>
+      <li>markdown:- <%= i.markdown %></li>
+      <a href="/delete/?id=<%= i.id  %>">delete</a>
+    </ul>
+    <% } %>
+  </body>
+</html>
